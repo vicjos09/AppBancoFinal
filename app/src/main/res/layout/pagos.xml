@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/lilnear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        tools:context=".Main">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="50dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Pagos A Terceros"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupszz"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_valor">
+
+            <RadioButton
+                android:id="@+id/sat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="SAT" />
+
+            <RadioButton
+                android:id="@+id/cfe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CFE"
+                android:textColor="#ffffff"/>
+            <RadioButton
+                android:id="@+id/siapa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIAPA"
+                android:textColor="#ffffff"/>
+
+
+
+
+        </RadioGroup>
+        <EditText
+            android:id="@+id/monto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:textColorHint="#ffffff"
+            android:gravity="center"
+            android:hint="Monto a Pagar $MXN" />
+
+        <Button
+            android:id="@+id/btnPagar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="Pagar"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

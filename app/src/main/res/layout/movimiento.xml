@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/dinero"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tipo"
+            android:layout_width="174dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="#070505"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/fechasA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/montoMovimientos"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="#0E0808"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

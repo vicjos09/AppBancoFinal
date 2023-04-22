@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_primary_dark">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.26034063" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.86" />
+
+    <EditText
+        android:id="@+id/montoT"
+        android:layout_width="325dp"
+        android:layout_height="62dp"
+
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Monto"
+
+
+        android:inputType="textPersonName"
+
+        android:paddingLeft="5dp"
+        android:textColorHint="#FBFBFB"
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline16" />
+
+    <EditText
+        android:id="@+id/Clave"
+        android:layout_width="325dp"
+        android:layout_height="62dp"
+
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Clave"
+
+
+        android:inputType="textPersonName"
+
+        android:paddingLeft="5dp"
+        android:textColorHint="#FBFBFB"
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline15" />
+
+    <EditText
+        android:id="@+id/usuarioM"
+        android:layout_width="325dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@android:color/white"
+
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Nombre del Beneficiario"
+        android:inputType="textPersonName"
+
+
+        android:paddingLeft="5dp"
+
+        android:textColorHint="#FBFBFB"
+        app:layout_constraintBottom_toTopOf="@+id/guideline15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline20"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <Button
+        android:id="@+id/trans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transferir"
+        app:layout_constraintBottom_toTopOf="@+id/guideline18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22" />
+</androidx.constraintlayout.widget.ConstraintLayout>

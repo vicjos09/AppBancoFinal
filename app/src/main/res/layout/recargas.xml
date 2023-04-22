@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lilnear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        tools:context=".Main">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="50dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="MONTO "
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupszz"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_valor">
+
+            <RadioButton
+                android:id="@+id/cien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="100" />
+
+            <RadioButton
+                android:id="@+id/doscientos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="200"
+                android:textColor="#ffffff"/>
+
+
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_valor">
+
+            <RadioButton
+                android:id="@+id/telcel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telcel"
+                android:textColor="#ffffff"/>
+
+            <RadioButton
+                android:id="@+id/movistar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Movistar"
+                android:textColor="#ffffff"/>
+
+            <RadioButton
+                android:id="@+id/atandt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Atandt"
+                tools:ignore="HardcodedText"
+                android:textColor="#ffffff"/>
+
+            <RadioButton
+                android:id="@+id/unefon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unefon"
+                android:textColor="#ffffff"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/numeroCelular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:textColorHint="#ffffff"
+            android:gravity="center"
+            android:hint="Numero de celular (10 digitos)" />
+
+        <Button
+            android:id="@+id/btnRecargar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="Recargar"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
